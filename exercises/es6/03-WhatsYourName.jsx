@@ -82,14 +82,10 @@ class WhatsYourName extends React.Component {
 
   render() {
 
-    function getName() {
-        return (this.state.name.length > 0) ? "Hey there. Enter your name." : "Hey " + this.state.name
-    }
-
     return (
       <div>
-        <p>{ (this.state.name.length < 0) ? "Hey there. Enter your name." : "Hey " + this.state.name }</p>
-        <input type="text" name="name" onChange={this.onNameChange} />
+        <p>{ (this.state.name.length == 0) ? "Hey there. Enter your name." : "Hey there. " + this.state.name }</p>
+        <input type="text" name="name" onChange={this.onNameChange}/>
       </div>
     );
   }
