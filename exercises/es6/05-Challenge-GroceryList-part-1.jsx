@@ -32,10 +32,12 @@ class GroceryList extends React.Component {
       );
     }
 
+    console.log(this.state)
+
     // Hint: Don't forget about putting items into `ul`
     return (
       <div>
-        // Put your code here
+        <ul><GroceryListItem grocery={this.state.groceries[0].name} /></ul>
       </div>
     );
   }
@@ -48,10 +50,12 @@ class GroceryListItem extends React.Component {
     super(props);
   }
 
+
   render() {
+
     return (
         <li>
-          // Put your code here.
+          {this.props.grocery}
         </li>
     );
   }
