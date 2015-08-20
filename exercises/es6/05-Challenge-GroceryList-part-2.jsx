@@ -43,7 +43,7 @@ class GroceryList extends React.Component {
   // Hint #2: Remember about the case where input is empty.
   // Hint #3: Name of the new grocery item will be stored in `this.state.newGroceryName`.
   addGroceryItem() {
-    // Put your code here
+    if(this.state.newGroceryName !== "") this.groceries.push({name: this.state.newGroceryName})
   }
 
   render() {
