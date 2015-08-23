@@ -76,7 +76,7 @@ class GroceryList extends React.Component {
   // Hint 1: Pay attention to the element's index on the list.
   toggleGroceryCompleteness(groceryIndex) {
 
-      this.state.groceries[groceryIndex].completed = true
+      this.state.groceries[groceryIndex].completed = true;
 
       this.setState( {
         groceries: this.state.groceries
